@@ -14,3 +14,5 @@ The heuristics implemented in the is based on _[VCCFinder: Finding Potential Vul
 It's important to run `/usr/bin/env python3 -m pip install -r requirements.txt` before executing the script.
 
 `repo.json` is a configuration file to be read by the script.
+
+`output.json` is the raw data for the report and the submitted table.

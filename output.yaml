@@ -1,0 +1,68 @@
+- cve_id: CVE-2018-1000616
+  fix_author: andrea@opennetworking.org
+  fix_commit: af1fa39a53c0016e92c1de246807879c16f507d6
+  repo: opennetworkinglab/onos
+  vcc:
+  - interval: 949 days, 9:43:44
+    stat:
+      affected:
+        dirs: 18
+        files:
+          average_interval: 39 days, 13:57:36.121212
+          average_times: 13.969696969696969
+          developers:
+            averge: 1.7575757575757576
+            max_commit: 1312
+            min_commit: 1
+            total: 58
+          total: 33
+      author: andrea@onlab.us
+      commit: eb70a94b5504180de5772d5229a4aae353960240
+      message: '[ONOS-3253/3144] Insert support for Netconf device configuration,
+        set and get controllers commands
+
+
+        Change-Id: I99188aa18207b9d0b0d935b9f9e61e547f4ddab1
+
+        '
+      modification:
+        no_comment_blank:
+          added: 1150
+          deleted: 914
+        total:
+          added: 1802
+          deleted: 1175
+      parents:
+      - d3ebb3098c830b53343b8c9144f4f54580818393
+- cve_id: CVE-2017-15719
+  fix_author: sbriquet@apache.org
+  fix_commit: 6f33727a1b4aa27d58d672a96154d9061db43fa
+  repo: sebfz1/wicket-jquery-ui
+  vcc:
+  - interval: 2047 days, 2:28:14
+    stat:
+      affected:
+        dirs: 27
+        files:
+          average_interval: 436 days, 22:05:34.163265
+          average_times: 21.122448979591837
+          developers:
+            averge: 0.20408163265306123
+            max_commit: 597
+            min_commit: 2
+            total: 10
+          total: 49
+      author: sebfz1@gmail.com
+      commit: b56baa0f212e5d1011d75ca42da0d15bb832c43d
+      message: 'kendo-ui editor + missing javadoc
+
+        '
+      modification:
+        no_comment_blank:
+          added: 208
+          deleted: 36
+        total:
+          added: 467
+          deleted: 100
+      parents:
+      - 4055b7258ae3b2aa98a5789490bc027abc5d5f61
