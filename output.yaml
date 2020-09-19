@@ -1,6 +1,9 @@
 - cve_id: CVE-2018-1000616
-  fix_author: andrea@opennetworking.org
+  fix_author:
+    email: andrea@opennetworking.org
+    name: Andrea Campanella
   fix_commit: af1fa39a53c0016e92c1de246807879c16f507d6
+  fix_gpg: null
   repo: opennetworkinglab/onos
   vcc:
   - interval: 949 days, 9:43:44
@@ -16,15 +19,21 @@
             min_commit: 1
             total: 58
           total: 33
-      author: andrea@onlab.us
-      commit: eb70a94b5504180de5772d5229a4aae353960240
-      message: '[ONOS-3253/3144] Insert support for Netconf device configuration,
-        set and get controllers commands
+      commit:
+        author:
+          email: andrea@onlab.us
+          name: andrea
+        gpg: null
+        message: '[ONOS-3253/3144] Insert support for Netconf device configuration,
+          set and get controllers commands
 
 
-        Change-Id: I99188aa18207b9d0b0d935b9f9e61e547f4ddab1
+          Change-Id: I99188aa18207b9d0b0d935b9f9e61e547f4ddab1
 
-        '
+          '
+        parents:
+        - d3ebb3098c830b53343b8c9144f4f54580818393
+        revision: eb70a94b5504180de5772d5229a4aae353960240
       modification:
         no_comment_blank:
           added: 1150
@@ -32,11 +41,12 @@
         total:
           added: 1802
           deleted: 1175
-      parents:
-      - d3ebb3098c830b53343b8c9144f4f54580818393
 - cve_id: CVE-2017-15719
-  fix_author: sbriquet@apache.org
+  fix_author:
+    email: sbriquet@apache.org
+    name: sbriquet
   fix_commit: 6f33727a1b4aa27d58d672a96154d9061db43fa
+  fix_gpg: null
   repo: sebfz1/wicket-jquery-ui
   vcc:
   - interval: 2047 days, 2:28:14
@@ -52,11 +62,17 @@
             min_commit: 2
             total: 10
           total: 49
-      author: sebfz1@gmail.com
-      commit: b56baa0f212e5d1011d75ca42da0d15bb832c43d
-      message: 'kendo-ui editor + missing javadoc
+      commit:
+        author:
+          email: sebfz1@gmail.com
+          name: Sebastien Briquet
+        gpg: null
+        message: 'kendo-ui editor + missing javadoc
 
-        '
+          '
+        parents:
+        - 4055b7258ae3b2aa98a5789490bc027abc5d5f61
+        revision: b56baa0f212e5d1011d75ca42da0d15bb832c43d
       modification:
         no_comment_blank:
           added: 208
@@ -64,5 +80,3 @@
         total:
           added: 467
           deleted: 100
-      parents:
-      - 4055b7258ae3b2aa98a5789490bc027abc5d5f61

@@ -89,12 +89,16 @@ class _descriptor:
 
     def stat(self, commit: str) -> Dict[str, Any]:
         commit = self._git.commit(commit)
-        rs = {
-            "commit": str(commit),
-            "author": commit.author.email,
+        rs = {"commit": {
+            "revision": str(commit),
+            "author": {
+                "name": commit.author.name,
+                "email": commit.author.email
+            },
+            "gpg": commit.gpgsig,
             "message": commit.message,
             "parents": [str(parent) for parent in commit.parents]
-        }
+        }}
 
         patches = PatchSet(self._git.git.show(commit, format="", p=True, color="never"))
 
@@ -185,7 +189,11 @@ if __name__ == "__main__":
             {
                 "repo": repo.repo,
                 "fix_commit": repo.fix,
-                "fix_author": (commit := repo._git.commit(repo.fix)).author.email,
+                "fix_gpg": (commit := repo._git.commit(repo.fix)).gpgsig,
+                "fix_author": {
+                    "name": commit.author.name,
+                    "email": commit.author.email
+                },
                 "cve_id": repo.cve_id,
                 "vcc": [
                     {
